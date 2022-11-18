@@ -1,0 +1,7 @@
+{
+  "name": "servicioIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
