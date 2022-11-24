@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor ="let item of getpersona">
+      {(item.nombre}}
+      {{item.edad}}
+      {{item.curso}}
+    </ion-item>
+  </ion-list>
+</ion-content>

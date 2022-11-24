@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { PostServiceProvider } from '../../providers/post-service/post-service';
+import { GetpersonaService } from '../Servicios/getpersona.service';
 
 @Component({
   selector: 'app-home',
@@ -9,21 +8,6 @@ import { PostServiceProvider } from '../../providers/post-service/post-service';
 })
 export class HomePage {
 
-  arrayPosts:any;
-
-  constructor(public navCtrl: NavController, public postServices:PostServiceProvider) {
-
-  }
-
-  ionViewDidLoad() {
-    this.getPosts();
-  }
-
-  getPosts() {
-    this.postServices.getPosts()
-    .then((data: any) => {
-      this.arrayPosts = data;
-    });
-  }
+  constructor( public _services: GetpersonaService) {  }
 
 }

@@ -13,8 +13,17 @@ const routes: Routes = [
   },
   {
     path: 'inicio',
-    loadChildren: () => import('./page/inicio/inicio.module').then( m => m.InicioPageModule)
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
+  {
+    path: 'cursos',
+    loadChildren: () => import('./pages/cursos/cursos.module').then( m => m.CursosPageModule)
+  },
+  {
+    path: 'personas',
+    loadChildren: () => import('./pages/personas/personas.module').then( m => m.PersonasPageModule)
+  }
+
 ];
 
 @NgModule({
